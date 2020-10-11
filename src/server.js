@@ -1,10 +1,4 @@
-var express = require('express');
-var morgan = require('morgan');
-
-//instancias
-const app =express();
-app.use(morgan('dev'));
-
+var app = require('./config/index')
 // servidor
 var port = process.env.PORT || 4000;
 async function server(){
